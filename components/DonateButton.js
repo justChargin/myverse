@@ -10,7 +10,7 @@ export default function DonateButton() {
   const [ethValue, setEthValue] = useState(0.001);
   const [usd, setUsd] = useState("");
 
-  const ownerAddress = "0xA48Db0a225703b25ef95B863C1aa44929bBA7FDe";
+  const ownerAddress = process.env.WALLET_ADDRESS;
 
   const transactionParameters = {
     to: ownerAddress,
