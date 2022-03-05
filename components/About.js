@@ -11,7 +11,6 @@ export default function About() {
         <p>
           I writing smartcontracts and generating NFT collections with
           Javascript. Besides that i can code a website where people can mint.
-          Im using Next.JS and React.JS together for my projects.
         </p>
         <div className={styles.opacityText}>Technologies</div>
 
