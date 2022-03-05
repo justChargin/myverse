@@ -1,0 +1,36 @@
+.navbar {
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar ul li a {
+  padding: 0.5rem 1rem;
+}
+
+.navbar ul li a:hover {
+  border-radius: 0.5rem;
+  background-color: #001220;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar ul {
+    margin: 0;
+    justify-content: center;
+  }
+}

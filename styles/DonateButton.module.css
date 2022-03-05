@@ -1,0 +1,22 @@
+.donation {
+  display: flex;
+  flex-direction: column;
+}
+
+.donation .price {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price button {
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}

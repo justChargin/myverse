@@ -1,0 +1,91 @@
+.aboutSection {
+  height: calc(100vh - 72.81px);
+  background: url("/aboutbackground.svg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  margin-top: 5rem;
+  position: relative;
+  max-width: 50vw;
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 10px 10px 37px -1px rgba(0, 0, 0, 0.66);
+  box-shadow: 10px 10px 37px -1px rgba(0, 0, 0, 0.66);
+}
+
+.screen h2 {
+  margin-bottom: 0;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.screen label {
+  font-style: italic;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  opacity: 0.7;
+}
+
+.screen img {
+  position: absolute;
+  top: -120px;
+  width: 200px;
+}
+
+.technologies {
+  margin: 0.5rem;
+  display: flex;
+}
+
+.technologies svg {
+  transition: all 500ms ease;
+}
+
+.technologies svg:hover {
+  transform: scale(1.2);
+}
+
+.screen .opacityText {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 7px;
+  opacity: 0.8;
+}
+
+.links {
+  display: flex;
+}
+
+.links a {
+  margin-bottom: 0.5rem;
+  transition: transform 200ms ease;
+  color: #333;
+}
+
+.links a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.links a:hover {
+  transform: rotate(15deg);
+}
+
+@media (max-width: 768px) {
+  .screen {
+    margin-top: 12rem;
+    max-width: 95vw;
+  }
+}

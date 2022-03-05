@@ -1,0 +1,46 @@
+.main {
+  height: calc(100vh - 72.81px);
+  background: url("/wave.svg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+/* .introduction button {
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  border: 1px solid #30cfd0;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all ease 300ms;
+}
+
+.introduction button:hover {
+  border: 1px solid #30cfd0;
+  background: #30cfd0;
+  -webkit-text-fill-color: #f7f7f7;
+} */
+
+.typeAnimation {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    padding-top: 9rem;
+  }
+}

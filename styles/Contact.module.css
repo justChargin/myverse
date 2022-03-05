@@ -1,0 +1,94 @@
+.contactMain {
+  height: calc(100vh - 72.81px);
+  background: url("/aboutbackground.svg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h3 {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all ease 300ms;
+}
+
+.card {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 40vw;
+  padding: 2rem 5rem;
+  background-color: #eeeeee;
+  -webkit-box-shadow: 10px 10px 37px -1px rgba(0, 0, 0, 0.66);
+  box-shadow: 10px 10px 37px -1px rgba(0, 0, 0, 0.66);
+}
+
+.inputGroup {
+  position: relative;
+}
+
+.inputGroup:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.inputGroup svg {
+  position: absolute;
+  opacity: 0.6;
+  top: 8px;
+  left: 7px;
+}
+
+.inputGroup input {
+  border: none;
+  width: 100%;
+  padding: 15px 40px;
+}
+
+.inputGroup textarea {
+  border: none;
+  resize: none;
+  width: 100%;
+  padding: 15px 40px;
+  height: 100px;
+}
+
+.card button {
+  border: none;
+  cursor: pointer;
+  border: 1px solid #30cfd0;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all ease 300ms;
+  width: 50%;
+  margin-left: auto;
+  margin-top: 0.5rem;
+}
+
+.card button:hover {
+  border: 1px solid #269e9e;
+  background: #269e9e;
+  -webkit-text-fill-color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-top: 6rem;
+    min-width: 95vw;
+    padding: 1rem;
+  }
+}
