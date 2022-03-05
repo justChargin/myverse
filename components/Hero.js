@@ -33,7 +33,17 @@ export default function Hero() {
   useEffect(async () => {
     const currentAddress = await getWalletAddress();
     setWalletAddress(currentAddress);
+
+    addWalletListener();
   }, []);
+
+  const addWalletListener = () => {
+    if (window.ethereum) {
+      window.ethereum.on("accountsChanged", async (accounts) => {
+        setWalletAddress(accounts[0]);
+      });
+    }
+  };
 
   return (
     <section className={styles.main}>
